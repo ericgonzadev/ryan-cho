@@ -1364,3 +1364,73 @@
 		color: white;
 		font-size: 20px;
 	}
+
+/* Video Heeader	*/
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Passion One', cursive;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 0px;
+    color: white;
+}
+
+header .more {
+    background-image: url(https://ryan-cho.s3.us-west-1.amazonaws.com/arrow.svg);
+    background-position: center 1.35em;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    height: 4em;
+    text-indent: 4em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 4em;
+    z-index: 2;
+    margin: 0 auto 2em auto;
+}
